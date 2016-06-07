@@ -4,13 +4,17 @@ block main-content
   .navbar.navbar-inverse.navbar-fixed-top
     .container
       .navbar-header
-        a.navbar-brand(href="/") MyWebsite
-          h6 Good
+        a.navbar-brand(href="/") GoMonster
+          h6 Yet to think
       .navbar-collapse.collapse
         ul.nav.navbar-nav
           li
             a(href="/") Home
-        //div(ng-include="'partials/account/navbar-login'")
+          li
+            a(href="/about") About Us
+          li
+            a(href="/contact") Contact
+        div(ng-include="'partials/account/navbar-login'")
             
   section.content
   div(ng-view) 
